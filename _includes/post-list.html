@@ -1,0 +1,19 @@
+<ul class="post-list">
+{% if include.category %}
+{% assign posts = site.posts | where_exp: "p", "p.categories contains include.category" %}
+{% else %}
+{% assign posts = site.posts %}
+{% endif %}
+{% for post in posts %}
+<li class="post-card">
+<a href="{{ post.url | relative_url }}">
+<span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+<span class="post-title">{{ post.title }}</span>
+{% if post.categories.size > 0 %}<span class="post-cat">{{ post.categories | join: " · " }}</span>{% endif %}
+</a>
+</li>
+{% endfor %}
+{% if posts.size == 0 %}
+<li class="post-empty">这个栏目还没有文章。</li>
+{% endif %}
+</ul>
