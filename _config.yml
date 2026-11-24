@@ -2,6 +2,5 @@ title: 许仲昊的博客
 description: GIS 开发、AI Agent 学习记录与胶片摄影
 lang: zh-CN
 timezone: Asia/Shanghai
-theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
