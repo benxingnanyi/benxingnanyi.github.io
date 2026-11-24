@@ -95,3 +95,6 @@ th,td{border:1px solid rgba(60,60,67,.16);padding:8px 12px;text-align:left}
   .nav-links a{font-size:14px}
   h1{font-size:25px}
 }
+.post-header{margin-bottom:1.6em}
+.post-header h1{margin-bottom:.25em}
+.post-meta{color:var(--ink-3);font-size:14px;margin:0}
